@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Botón de reproducir / pausar */
+.audio-btn {
+    padding: 10px 20px;
+    background-color: rgba(255, 230, 167, 0.9); /* beige */
+    border: 2px solid #432818; /* marrón oscuro */
+    color: #432818;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Hover */
+.audio-btn:hover {
+    background-color: #99582A; /* marrón medio */
+    color: #FFE6A7; /* beige claro */
+    transform: scale(1.06);
+}
+
+/* Cuando esté activo */
+.audio-btn:active {
+    transform: scale(0.95);
+}

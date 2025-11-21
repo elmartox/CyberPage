@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/* === Paleta cyberpunk ===
+Negro: #00060B
+Verde oliva: #9A9A10
+Amarillo neón: #FFE600
+Celeste: #57C4E5
+Turquesa: #3AC7B9
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #00060B;
+    color: #EAEAEA;
+}
+
+/* --- Header --- */
+header {
+    background-color: #000;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 0 10px #FFE600;
+}
+
+nav a {
+    color: #57C4E5;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #FFE600;
+    text-shadow: 0 0 8px #FFE600;
+}
+
+/* --- Hero section --- */
+.hero {
+    background: url('../img/nightcity.jpg') center/cover no-repeat;
+    position: relative;
+    height: 75vh;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFE600;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background: #3AC7B9;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background: #57C4E5;
+    box-shadow: 0 0 10px #57C4E5;
+}
+
+/* --- Main content --- */
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.character {
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #3AC7B9;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 230px;
+}
+
+.character img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #57C4E5;
+    box-shadow: 0 0 10px #57C4E5;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.character:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #FFE600;
+}
+
+.character img:hover {
+    box-shadow: 0 0 20px #FFE600;
+}
+
+.character .name {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #FFE600;
+    text-shadow: 0 0 6px #FFE600;
+    letter-spacing: 1px;
+}
+
+/* --- Video --- */
+.video-container {
+    margin-top: 40px;
+}
+
+iframe {
+    border: 2px solid #57C4E5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #3AC7B9;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+    color: #57C4E5;
+    font-size: 14px;
+    border-top: 1px solid #9A9A10;
+}
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character span {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #FFE600;
+    text-shadow: 0 0 6px #FFE600;
+    letter-spacing: 10px;
+}
+
+/* === Sinopsis Page === */
+.sinopsis-page h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #FFE600;
+    text-shadow: 0 0 10px #FFE600;
+    margin-bottom: 30px;
+}
+
+.sinopsis-page .intro {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    color: #E0E0E0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.sinopsis-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px 0;
+    flex-wrap: wrap;
+}
+
+.sinopsis-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.sinopsis-section img {
+    width: 40%;
+    min-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #57C4E5;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sinopsis-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #FFE600;
+}
+
+.sinopsis-section .text {
+    width: 45%;
+    min-width: 300px;
+}
+
+.sinopsis-section h3 {
+    color: #3AC7B9;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #3AC7B9;
+}
+
+.sinopsis-section p {
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.sinopsis-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.sinopsis-section li {
+    color: #FFE600;
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FFE600;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #3AC7B9;
+    box-shadow: 0 0 15px #3AC7B9;
+}
+/* === Fondo especial para la página de Sinopsis === */
+.sinopsis-page {
+    background: url('../imgs/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f1f1f1;
+    padding: 60px 10%;
+    border-radius: 10px;
+    backdrop-filter: brightness(0.85) saturate(1.2);
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6);
+}
+
+/* === Texto y estructura === */
+.sinopsis-page h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #FFE600;
+    text-shadow: 0 0 10px #FFE600;
+    margin-bottom: 30px;
+}
+
+.sinopsis-page .intro {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #eaeaea;
+    margin-bottom: 50px;
+}
+
+/* === Secciones alternadas con imágenes === */
+.sinopsis-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 70px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 230, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sinopsis-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(58, 199, 185, 0.6);
+}
+
+/* Alterna la disposición de imagen y texto */
+.sinopsis-section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* === Imágenes === */
+.sinopsis-section img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(87, 196, 229, 0.8);
+    border: 2px solid rgba(87, 196, 229, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sinopsis-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #FFE600;
+}
+
+/* Primera imagen más pequeña */
+.small-img {
+    width: 32% !important;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* === Texto dentro de las secciones === */
+.sinopsis-section .text {
+    width: 55%;
+}
+
+.sinopsis-section h3 {
+    color: #3AC7B9;
+    text-shadow: 0 0 6px #3AC7B9;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.sinopsis-section p {
+    color: #ddd;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* === Lista y botón === */
+.sinopsis-section ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.sinopsis-section li {
+    color: #FFE600;
+    text-shadow: 0 0 5px #000;
+    margin-bottom: 5px;
+}
+
+.sinopsis-section .btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #3AC7B9;
+    color: #000;
+    border: none;
+    
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #3AC7B9;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.sinopsis-section .btn:hover {
+    background-color: #FFE600;
+    color: #000;
+    box-shadow: 0 0 20px #FFE600;
+}
+
